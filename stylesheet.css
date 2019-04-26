@@ -1,12 +1,60 @@
 body {
     margin: 50px;
+    background-color: #A4AD9C;
+    font-family: 'Gugi', cursive;
 }
 .wrapper {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 30% 1fr;
-    grid-template-rows: 20% 20% 1fr 20%
+    grid-template-rows: 15% 20% 1fr 20%
 }
     .box {
         background-color: #f4f4f4;
+        text-align: center;
     }
+        .box h2 {
+            text-decoration: underline;
+        }
+        .box h3 {
+            text-decoration: underline;
+        }
+        .box q {
+            font-style: italic;
+            font-size: 80%;
+        }
+        .header {
+            grid-area: 1 / 1 / 2 / span 2;
+        }
+            .header h1 {
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        .personalia {
+            grid-area: 2 / 1 / 3 / 2;
+        }
+        .profiel {
+            grid-area: 2 / 2 / 3 / 3;
+            border-left: solid 3px black;
+        }
+        .vaardigheden {
+            grid-area: 3 / 1 / 5 / 2;
+        }
+        .werkervaring {
+            grid-area: 3 / 2 / 4 / 3;
+            text-align: left;
+            padding-left: 20px;
+            border-left: solid 3px black;
+        }
+            .werkervaring h2 {
+                text-align: center;
+            }
+        .opleiding {
+            grid-area: 4 / 2 / 5 / 3;
+            text-align: left;
+            padding-left: 20px;
+            border-left: solid 3px black;
+        }
+            .opleiding h2 {
+                text-align: center;
+            }
