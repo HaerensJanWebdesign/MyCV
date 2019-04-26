@@ -1,0 +1,12 @@
+body {
+    margin: 50px;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 20% 20% 1fr 20%
+}
+    .box {
+        background-color: #f4f4f4;
+    }
