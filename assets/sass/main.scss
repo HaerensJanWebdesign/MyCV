@@ -1,0 +1,183 @@
+$border-rad: 11px;
+$border-side: solid 3px white;
+$hook: 0px;
+$color-w: white;
+
+
+body {
+    margin: 50px;
+    background-image: url("../images/bground.jpg");
+    background-size: cover;
+    font-family: 'Gugi', cursive;
+
+    a:hover {
+        color: #FF3D39;
+        box-shadow: 0px 5px 10px $color-w;
+    }
+    .wrapper {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 15% 20% 1fr 20%;
+        margin-left: 3%;
+    }
+    .socials {
+        position: fixed;
+        top: 100px;
+        left: 0;
+    }
+}
+
+
+.box {
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: $color-w;
+    border-radius: 15px;
+
+    h2 {
+        text-decoration: underline;
+    }
+
+    h3 {
+        text-decoration: underline;
+    }
+    q {
+        font-style: italic;
+        font-size: 80%;
+    }
+}
+
+
+.header {
+    grid-area: 1 / 1 / 2 / span 2;
+    border-right: solid 3px $color-w;
+    border-left: solid 3px $color-w;
+
+    h1 {
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+}
+
+
+.personalia {
+    grid-area: 2 / 1 / 3 / 2;
+    border-right: $border-side;
+    border-left: $border-side;
+
+    .button {
+        text-decoration: none;
+        color:$color-w;
+        border: solid $color-w;
+        padding: 5px;
+        border-radius: 15px;
+    }
+}
+
+
+.profiel {
+    grid-area: 2 / 2 / 3 / 3;
+    border-left: $border-side;
+    border-right: $border-side;
+    padding-right: 10px;
+}
+
+
+.vaardigheden {
+    grid-area: 3 / 1 / 5 / 2;
+    border-right: $border-side;
+    border-left: $border-side;
+
+    .container {
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-left: 10%;
+        border: solid $color-w;
+        border-radius: 15px;
+    
+        .skillbar {
+            text-align: right;
+            padding: 5px;
+            color: black;
+        }
+            .Kl {
+                width: 97.5%;
+                background-color: $color-w;
+                border-radius: $border-rad;
+            }
+            .IT {
+                width: 50%;
+                background-color: $color-w;
+                border-radius:$border-rad;
+                border-top-right-radius: $hook;
+                border-bottom-right-radius: $hook;
+            }
+            .Cole {
+                width: 90%;
+                background-color: $color-w;
+                border-radius: $border-rad;
+                border-top-right-radius: $hook;
+                border-bottom-right-radius: $hook;
+            }
+            .Eng {
+                width: 70%;
+                background-color: $color-w;
+                border-radius: $border-rad;
+                border-top-right-radius: $hook;
+                border-bottom-right-radius: $hook;
+            }
+            .Spo {
+                width: 90%;
+                background-color: $color-w;
+                border-radius: $border-rad;
+                border-top-right-radius: $hook;
+                border-bottom-right-radius: $hook;
+            }
+    }
+}
+        .werkervaring {
+            grid-area: 3 / 2 / 4 / 3;
+            text-align: left;
+            padding-left: 20px;
+            border-left: $border-side;
+            border-right: $border-side;
+        }
+            .werkervaring h2 {
+                text-align: center;
+            }
+        .opleiding {
+            grid-area: 4 / 2 / 5 / 3;
+            text-align: left;
+            padding-left: 20px;
+            border-left: $border-side;
+            border-right: $border-side;
+        }
+            .opleiding h2 {
+                text-align: center;
+            }
+
+@media only screen and (max-width:600px) {
+    .header {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .personalia {
+        grid-area: 2 / 1 / 3 / 3;
+        overflow: auto;
+    }
+    .profiel {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    .werkervaring {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+    .opleiding {
+        grid-area: 5 / 1 / 6 / 3;
+    }
+    .vaardigheden {
+        grid-area: 6 / 1 / 7 / 3;
+    }
+    .socials {
+        max-width: 3%;
+    }
+}
