@@ -1,0 +1,36 @@
+body {
+    margin: 50px;
+    background-image: url("../images/bground.jpg");
+    background-size: cover;
+    font-family: 'Gugi', cursive;
+
+    h1 {
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    h2 {
+        text-decoration: underline;
+    }
+
+    h3 {
+        text-decoration: underline;
+    }
+    q {
+        font-style: italic;
+        font-size: 80%;
+    }
+    a {
+        color: $color-w;
+    }
+    a:hover {
+        color: #FF3D39;
+        box-shadow: 0px 5px 10px $color-w;  
+    }
+    .wrapper {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 30% 1fr;
+        grid-template-rows: 15% 20% 1fr 20%;
+        margin-left: 3%;
+    }
+}

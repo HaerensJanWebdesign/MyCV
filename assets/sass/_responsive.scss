@@ -1,0 +1,24 @@
+@media only screen and (max-width:600px) {
+    .header {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .personalia {
+        grid-area: 2 / 1 / 3 / 3;
+        overflow: auto;
+    }
+    .profiel {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    .werkervaring {
+        grid-area: 4 / 1 / 5 / 3;
+    }
+    .opleiding {
+        grid-area: 5 / 1 / 6 / 3;
+    }
+    .vaardigheden {
+        grid-area: 6 / 1 / 7 / 3;
+    }
+    .socials {
+        max-width: 3%;
+    }
+}

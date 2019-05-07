@@ -1,0 +1,11 @@
+@mixin bar {
+    background-color: $color-w;
+    border-radius:$border-rad;
+    border-top-right-radius: $hook;
+    border-bottom-right-radius: $hook;
+}
+
+@mixin bds {
+    border-left: $border-side;
+    border-right: $border-side;
+}

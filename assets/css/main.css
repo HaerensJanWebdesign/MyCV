@@ -5,6 +5,28 @@ body {
   font-family: 'Gugi', cursive;
 }
 
+body h1 {
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+body h2 {
+  text-decoration: underline;
+}
+
+body h3 {
+  text-decoration: underline;
+}
+
+body q {
+  font-style: italic;
+  font-size: 80%;
+}
+
+body a {
+  color: white;
+}
+
 body a:hover {
   color: #FF3D39;
   -webkit-box-shadow: 0px 5px 10px white;
@@ -22,7 +44,7 @@ body .wrapper {
   margin-left: 3%;
 }
 
-body .socials {
+.socials {
   position: fixed;
   top: 100px;
   left: 0;
@@ -35,17 +57,63 @@ body .socials {
   border-radius: 15px;
 }
 
-.box h2 {
-  text-decoration: underline;
+.button {
+  text-decoration: none;
+  border: solid white;
+  padding: 5px;
+  border-radius: 15px;
 }
 
-.box h3 {
-  text-decoration: underline;
+.container {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 10%;
+  border: solid white;
+  border-radius: 15px;
 }
 
-.box q {
-  font-style: italic;
-  font-size: 80%;
+.container .skillbar {
+  text-align: right;
+  padding: 5px;
+  color: black;
+}
+
+.container .Kl {
+  width: 97.5%;
+  background-color: white;
+  border-radius: 11px;
+}
+
+.container .IT {
+  width: 50%;
+  background-color: white;
+  border-radius: 11px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.container .Cole {
+  width: 90%;
+  background-color: white;
+  border-radius: 11px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.container .Eng {
+  width: 70%;
+  background-color: white;
+  border-radius: 11px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.container .Spo {
+  width: 90%;
+  background-color: white;
+  border-radius: 11px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 
 .header {
@@ -54,13 +122,8 @@ body .socials {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: 1 / 1 / 2 / span 2;
-  border-right: solid 3px white;
   border-left: solid 3px white;
-}
-
-.header h1 {
-  text-transform: uppercase;
-  text-decoration: underline;
+  border-right: solid 3px white;
 }
 
 .personalia {
@@ -69,16 +132,8 @@ body .socials {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 2 / 1 / 3 / 2;
-  border-right: solid 3px white;
   border-left: solid 3px white;
-}
-
-.personalia .button {
-  text-decoration: none;
-  color: white;
-  border: solid white;
-  padding: 5px;
-  border-radius: 15px;
+  border-right: solid 3px white;
 }
 
 .profiel {
@@ -98,60 +153,8 @@ body .socials {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 3 / 1 / 5 / 2;
-  border-right: solid 3px white;
   border-left: solid 3px white;
-}
-
-.vaardigheden .container {
-  width: 80%;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin-left: 10%;
-  border: solid white;
-  border-radius: 15px;
-}
-
-.vaardigheden .container .skillbar {
-  text-align: right;
-  padding: 5px;
-  color: black;
-}
-
-.vaardigheden .container .Kl {
-  width: 97.5%;
-  background-color: white;
-  border-radius: 11px;
-}
-
-.vaardigheden .container .IT {
-  width: 50%;
-  background-color: white;
-  border-radius: 11px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.vaardigheden .container .Cole {
-  width: 90%;
-  background-color: white;
-  border-radius: 11px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.vaardigheden .container .Eng {
-  width: 70%;
-  background-color: white;
-  border-radius: 11px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.vaardigheden .container .Spo {
-  width: 90%;
-  background-color: white;
-  border-radius: 11px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border-right: solid 3px white;
 }
 
 .werkervaring {
@@ -166,7 +169,7 @@ body .socials {
   border-right: solid 3px white;
 }
 
-.werkervaring h2 {
+h2 {
   text-align: center;
 }
 
@@ -182,7 +185,7 @@ body .socials {
   border-right: solid 3px white;
 }
 
-.opleiding h2 {
+h2 {
   text-align: center;
 }
 
