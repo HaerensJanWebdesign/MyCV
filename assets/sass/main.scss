@@ -1,8 +1,4 @@
-$border-rad: 11px;
-$border-side: solid 3px white;
-$hook: 0px;
-$color-w: white;
-
+@import 'variables';
 
 body {
     margin: 50px;
@@ -51,8 +47,8 @@ body {
 
 .header {
     grid-area: 1 / 1 / 2 / span 2;
-    border-right: solid 3px $color-w;
-    border-left: solid 3px $color-w;
+    border-right: $border-side;
+    border-left: $border-side;
 
     h1 {
         text-transform: uppercase;
