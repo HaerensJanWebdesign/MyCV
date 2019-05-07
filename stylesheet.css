@@ -1,6 +1,6 @@
 body {
     margin: 50px;
-    background-image: url("images/bground.jpg");
+    background-image: url("assets/images/bground.jpg");
     background-size: cover;
     font-family: 'Gugi', cursive;
 }
@@ -63,9 +63,6 @@ body {
             border-right: solid 3px white;
             padding-right: 10px;
         }
-            .profiel p {
-
-            }
         .vaardigheden {
             grid-area: 3 / 1 / 5 / 2;
             border-right: solid 3px white;
